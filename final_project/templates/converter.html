@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Base Converter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet"  href="{{ url_for('static', filename='css/newstyle.css') }}">
+</head>
+<body>
+    <h1 class="cool">here you can convert between the bases!</h1>
+    <div class="container" style="background-color: #ebb51c">
+        <div class="row fill">
+            <div class="col">
+                <form action="/dec_to_bin">
+                    <div class="form-group">
+                        <label>Decimal to Binary:</label>
+                        <input type="text" class="form-control" name="dec">
+                        <button type="submit" class="btn btn-danger">Convert to Binary</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col">
+                <form action="/dec_to_hex">
+                    <div class="form-group">
+                        <label>Decimal to Hexadecimal:</label>
+                        <input type="text" class="form-control" name="dec">
+                        <button type="submit" class="btn btn-danger">Convert to Hexadecimal</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col">
+                <form action="/dec_to_oct">
+                    <div class="form-group">
+                        <label>Decimal to Octaldecimal:</label>
+                        <input type="text" class="form-control" name="dec">
+                        <button type="submit" class="btn btn-danger">Convert to Oct</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br>
+        <div class="row fill">
+            <div class="col">
+                <form action="/bin_to_dec">
+                    <div class="form-group">
+                        <label>Binary to Decimal:</label>
+                        <input type="text" class="form-control" name="bin">
+                        <button type="submit" class="btn btn-danger">Convert to Decimal</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col">
+                <form action="/hex_to_dec">
+                    <div class="form-group">
+                        <label>Hexadecimal to Decimal:</label>
+                        <input type="text" class="form-control" name="hex">
+                        <button type="submit" class="btn btn-danger">Convert to Decimal</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col">
+                <form action="/oct_to_dec">
+                    <div class="form-group">
+                        <label>Octaldecimal to Decimal:</label>
+                        <input type="text" class="form-control" name="oct">
+                        <button type="submit" class="btn btn-danger">Convert to Decimal</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
